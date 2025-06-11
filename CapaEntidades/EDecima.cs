@@ -12,11 +12,7 @@ namespace CapaEntidades
         public DateTime fecha {  get; set; }
         public string comentario { get; set; }
 
-        public double valor { get; set; }
-
-        
-        public double enn {  get; set; }
-        
+        public double valor { get; set; }        
         public EDecima() 
         {
             id = 0;
