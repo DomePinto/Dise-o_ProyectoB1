@@ -15,7 +15,7 @@ namespace CapaEntidades
         public double valor { get; set; }
 
         
-
+        public double enn {  get; set; }
         
         public EDecima() 
         {
