@@ -8,10 +8,9 @@ namespace CapaEntidades
 {
     public class EEstudiante
     {
-        public int id { get; set; }
+        public int codigo { get; set; }
         public string nombre { get; set; }
-        public string apellido { get; set; }
-        private List<EDecima> decimasExtras { get; set; }
+        public List<EDecima> decimasExtras { get; set; }
 
         public EEstudiante()
         {
@@ -19,18 +18,17 @@ namespace CapaEntidades
         }
 
         // Constructor con parámetros
-        public EEstudiante(int id, string nombre, string apellido)
+        public EEstudiante(int codigo, string nombre)
         {
-            this.id = id;
+            this.codigo = codigo;
             this.nombre = nombre;
-            this.apellido = apellido;
             this.decimasExtras = new List<EDecima>();
         }
 
         // Método ToString para mostrar la información
         public override string ToString()
         {
-            return $"ID: {id} - Nombre: {nombre} - Décimas: {decimasExtras.Count}";
+            return $"Código: {codigo} - Nombre: {nombre} - Décimas: {decimasExtras.Count}";
         }
     }
 }
